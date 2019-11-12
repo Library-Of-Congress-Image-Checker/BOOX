@@ -1144,10 +1144,19 @@ legend {
   }
 }
 
-.btn .btn-info {
+/*stuff that camille did*/
+.btn {
+  padding-top: 4px;
+  padding-bottom: 0px;
+}
+.btn-default {
   color: #fff;
   background-color: #000000;
-  border-color: #46b8da;
+  border-color: #fff;
 }
-
+.btn-default:hover, .btn-default:focus, {
+    color: black;
+    background-color: #fff;
+    border-color: #000000;
+}
 /*# sourceMappingURL=Searchs_008.css.map */
