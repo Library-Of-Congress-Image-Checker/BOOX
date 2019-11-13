@@ -818,7 +818,7 @@ legend {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background: url("../images/Searchs_008.png");
+  background-image: linear-gradient(#05b888, white);
   background-size: cover;
   padding: 15px;
   font-family: 'Roboto', sans-serif;
@@ -1158,5 +1158,11 @@ legend {
     color: black;
     background-color: #fff;
     border-color: #000000;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=Searchs_008.css.map */
