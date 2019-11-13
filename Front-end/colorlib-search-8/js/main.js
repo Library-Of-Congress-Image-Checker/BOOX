@@ -8,9 +8,9 @@ container.setAttribute('class', 'container')
 app.appendChild(logo)
 app.appendChild(container)
 */
-
+var input = '';
 function searchBar() {
-  var input = document.getElementById("search").value;
+  input = document.getElementById("search").value;
 }
 var API_KEY = '14260700-2be5fa852c1142d527bf48083';
 var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(input);
