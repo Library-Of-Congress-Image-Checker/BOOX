@@ -11,7 +11,8 @@ app.appendChild(container)
 var input = '';
 function searchBar() {
   input = document.getElementById("search").value;
-  var API_KEY = '14260700-2be5fa852c1142d527bf48083';
+  var API_KEY = '14295459-b24a70ecc8e1fafb8a48535b2';
+
   var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(input);
   var request = new XMLHttpRequest()
   $.getJSON(URL, function(data){
