@@ -1,4 +1,4 @@
-require('./assets/less/styles.less');
+
 
 MOCK_MODE = false;
 
