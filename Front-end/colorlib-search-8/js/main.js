@@ -16,7 +16,7 @@ function searchBar() {
   $.getJSON(URL, function(data){
   if (parseInt(data.totalHits) > 0)
       $.each(data.hits, function(i, hit){
-        var src = hit.pageURL;
+        var src = hit.webformatURL;
             img = document.createElement('img');
             img.src = src;
             document.body.appendChild(img);
