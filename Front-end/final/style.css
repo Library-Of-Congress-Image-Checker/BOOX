@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 400 16px Open Sans;
+}
+
+.searchInput {
+  display: block;
+  border: none;
+  outline: none;
+  padding: 5px 0;
+  margin: 20px auto;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.searchInput:focus {
+  border-bottom: 2px solid black;
+}
+
+.loading {
+  display: none;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.wrapper {
+  display: none;
+  margin: 0.5em auto;
+  padding: 0 0.5em;
+  text-align: center;
+}
+@media (max-width: 680px) {
+  .wrapper {
+    width: 100% !important;
+  }
+  .wrapper .image {
+    width: calc(100% - 2em) !important;
+    height: 150px;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+}
+.wrapper .image {
+  position: relative;
+  margin: 0.5em;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.wrapper .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.wrapper .image .hidden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%) scale(0);
+  text-align: center;
+  transition: transform 0.2s;
+  color: white;
+}
+.wrapper .image:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.wrapper .image:hover .overlay {
+  opacity: 1;
+}
+.wrapper .image:hover .hidden {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.wrapper .image:hover .hidden div b {
+  font-size: 19px;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+.wrapper .image:hover .hidden div i {
+  font-size: 19px;
+  font-weight: 700;
+}
+.wrapper .image:hover .hidden .stats {
+  margin: 0.25em 0;
+}
+.wrapper .image:hover .hidden .stats b, .wrapper .image:hover .hidden .stats i {
+  vertical-align: middle;
+}
+.wrapper .image:hover .hidden .direct-links a {
+  display: inline-block;
+  margin: 0.5em 0.25em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  border-radius: 5px;
+}
+.wrapper .image:hover .hidden .direct-links a i {
+  vertical-align: middle;
+}
+.wrapper .image:hover .hidden .direct-links a, .wrapper .image:hover .hidden .direct-links a:visited {
+  color: black;
+}
+.wrapper .image:hover .hidden .direct-links a:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.wrapper .image:hover .hidden .direct-links a:active {
+  background: rgba(255, 255, 255, 0.7);
+}
